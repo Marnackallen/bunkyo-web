@@ -1667,3 +1667,102 @@ img { max-width: 100%; height: auto; display: block; }
   border-radius: 0px;
   border: 1px solid #dcd7cc;
 }
+
+/* ==========================================================================
+   ステップ1 テストコンポーネント (お知らせバー & ニュースレター)
+   ========================================================================== */
+.announcement-top-bar {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+  color: #ffffff;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  animation: pulseBar 3s infinite alternate;
+}
+
+@keyframes pulseBar {
+  0% { opacity: 0.92; }
+  100% { opacity: 1; }
+}
+
+.newsletter-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.newsletter-container {
+  max-width: 680px;
+  margin: 0 auto;
+  background: rgba(128, 128, 128, 0.08);
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  backdrop-filter: blur(12px);
+}
+
+.newsletter-badge {
+  display: inline-block;
+  background: #3b82f6;
+  color: #ffffff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 99px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.newsletter-title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-desc {
+  font-size: 0.95rem;
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.75rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+@media (max-width: 580px) {
+  .newsletter-form { flex-direction: column; }
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 0.8rem 1.2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  font-size: 0.95rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #1a1a1a;
+  outline: none;
+}
+
+.newsletter-btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  border: none;
+  background: #3b82f6;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+  white-space: nowrap;
+}
+
+.newsletter-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+

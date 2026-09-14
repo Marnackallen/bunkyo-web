@@ -47,6 +47,11 @@
 
   <!-- 実際のWebサイト本体 -->
   <div class="website-wrapper">
+    <!-- お知らせ告知バー（ステップ1テスト用） -->
+    <div class="announcement-top-bar">
+      <span>🎉 <strong>【Step 1 成功テスト】</strong> AntigravityによってHTMLファイルが自動更新されました！</span>
+    </div>
+
     <!-- 1. 本格ナビゲーションバー (Navbar) -->
     <header class="site-header">
       <div class="site-header-container">
@@ -210,6 +215,19 @@
             <p class="usecase-detail" id="usecaseDetail"></p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- 4.5. ニュースレター＆フィードバック登録（ステップ1テスト用） -->
+    <section class="newsletter-section">
+      <div class="newsletter-container">
+        <span class="newsletter-badge">📩 STEP 1 TEST COMPONENT</span>
+        <h3 class="newsletter-title">最新デザインアップデートを受け取る</h3>
+        <p class="newsletter-desc">Antigravityが直接HTMLに追加したインタラクティブセクションです。</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('🎉 ご登録ありがとうございます！【Step 1 テスト大成功】');">
+          <input type="email" placeholder="メールアドレスを入力..." required class="newsletter-input">
+          <button type="submit" class="newsletter-btn">登録して試す</button>
+        </form>
       </div>
     </section>
 
