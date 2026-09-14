@@ -1,0 +1,9 @@
+# OS / エディタ一時ファイル
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# エディタ設定
+.vscode/
+.idea/
